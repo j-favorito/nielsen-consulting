@@ -6,8 +6,13 @@ $(document).ready(function () {
     let brandElement=$("<a>");
     brandElement.attr({
         class: "navbar-brand",
-        href:"#"});
-    brandElement.text("Nielsen Consultants")
+        href:"index.html"});
+    let brandImage=$("<img>")
+    brandImage.attr({
+            class: "brand-logo",
+            src: "../../images/logo.png"
+    })
+    brandElement.append(brandImage);
     let dropdownBttn=$("<button>");
     dropdownBttn.attr({
         class: "navbar-toggler",
@@ -34,13 +39,13 @@ $(document).ready(function () {
     });
     let navAbout = $("<a>");
     navAbout.attr({
-        class: "nav-item nav-link",
-        href: "#",
+        class: "nav-item nav-link nav-text",
+        href: "about.html",
     })
     navAbout.text("About")
     let navContact = $("<a>");
     navContact.attr({
-        class: "nav-item nav-link",
+        class: "nav-item nav-link nav-text",
         href: "#",
     })
     navContact.text("Contact");
@@ -48,7 +53,6 @@ $(document).ready(function () {
     navCollapse.append(navItems);
     bootNav.append(brandElement,dropdownBttn,navCollapse);
     $(".boot-nav").append(bootNav);
-    $('.dropdown-toggle').dropdown();
 })
 
 {/* <nav class="navbar navbar-expand-lg navbar-light bg-light">

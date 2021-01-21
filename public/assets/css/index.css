@@ -14,6 +14,7 @@ body {
 .mission-box{
     margin-top: 500px;
     background-color:white;
+    text-align: center;
 }
 
 .mission-img{
@@ -22,9 +23,12 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    max-width: 500px;
+    max-height: 400px;
 }
 .mission{
     padding: 20px;
 }
+
+
 
