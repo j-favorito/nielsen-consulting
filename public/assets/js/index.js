@@ -36,7 +36,7 @@ $(document).ready(function () {
     let mission2Img=$("<img>");
     mission2Img.attr({
         class: "col-lg-12 mission-img",
-        src: "../../images/mail-bw.png"
+        src: "../../images/hands-bw.png"
     });
     let mission2Text=$("<div>");
     mission2Text.attr({
@@ -58,7 +58,7 @@ $(document).ready(function () {
     let mission3Img=$("<img>");
     mission3Img.attr({
         class: "col-lg-12 mission-img",
-        src: "../../images/hands-bw.png"
+        src: "../../images/mail-bw.png"
     });
     let mission3Text=$("<div>");
     mission3Text.attr({

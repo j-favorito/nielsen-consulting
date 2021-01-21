@@ -40,13 +40,13 @@ $(document).ready(function () {
     let navAbout = $("<a>");
     navAbout.attr({
         class: "nav-item nav-link nav-text",
-        href: "about.html",
+        href: "about.html"
     })
     navAbout.text("About")
     let navContact = $("<a>");
     navContact.attr({
         class: "nav-item nav-link nav-text",
-        href: "#",
+        href: "email.html",
     })
     navContact.text("Contact");
     navItems.append(navAbout,navContact);
@@ -54,6 +54,8 @@ $(document).ready(function () {
     bootNav.append(brandElement,dropdownBttn,navCollapse);
     $(".boot-nav").append(bootNav);
 })
+
+
 
 {/* <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
