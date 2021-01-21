@@ -1,6 +1,7 @@
 .nav-text{
     font-size: 25px;
     float: right;
+    color: navy;
 }
 
 .brand-logo {
@@ -8,4 +9,8 @@ width:130px;
 height: 70px;
 position: relative;
 top: -10px;
+}
+
+.navbar{
+    background-color: white;
 }
