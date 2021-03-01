@@ -2,6 +2,10 @@ body {
     background-color: rgb(2, 37, 51);
 }
 
+.container{
+    padding-top: 80px;
+}
+
 .about-box{
     color: white;
     margin-top: 40px;

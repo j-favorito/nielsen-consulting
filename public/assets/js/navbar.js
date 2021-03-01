@@ -1,7 +1,7 @@
 $(document).ready(function () {
     let bootNav = $("<nav>")
     bootNav.attr({
-        class: "navbar navbar-expand-lg navbar-light"
+        class: "navbar fixed-top navbar-expand-lg navbar-light"
     });
     let brandElement = $("<a>");
     brandElement.attr({
