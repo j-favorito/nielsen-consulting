@@ -1,20 +1,19 @@
 body {
-    background-color: rgb(17, 17, 51);
+    background-color: rgb(2, 37, 51);
 }
 
 .about-box{
     color: white;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .about-head{
 text-align: center;
-padding: 20px;
 }
 
 .text-content{
     font-size:16px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .about-logo{

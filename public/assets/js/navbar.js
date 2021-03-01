@@ -1,41 +1,42 @@
-$(document).ready(function () { 
-    let bootNav=$("<nav>")
+$(document).ready(function () {
+    let bootNav = $("<nav>")
     bootNav.attr({
         class: "navbar navbar-expand-lg navbar-light"
     });
-    let brandElement=$("<a>");
+    let brandElement = $("<a>");
     brandElement.attr({
         class: "navbar-brand",
-        href:"index.html"});
-    let brandImage=$("<img>")
+        href: "index.html"
+    });
+    let brandImage = $("<img>")
     brandImage.attr({
-            class: "brand-logo",
-            src: "../../images/logo.png"
+        class: "brand-logo",
+        src: "../../images/logo.png"
     })
     brandElement.append(brandImage);
-    let dropdownBttn=$("<button>");
+    let dropdownBttn = $("<button>");
     dropdownBttn.attr({
         class: "navbar-toggler",
         type: "button",
         "data-toggle": "collapse",
         "data-target": "#navbarNavAltMarkup",
         "aria-controls": "navbarNavAltMarkup",
-        "aria-expanded":"false",
-        "aria-label":"Toggle navigation"
+        "aria-expanded": "false",
+        "aria-label": "Toggle navigation"
     })
-    let dropdownIcon=$("<span>");
+    let dropdownIcon = $("<span>");
     dropdownIcon.attr({
-        class:"navbar-toggler-icon"
+        class: "navbar-toggler-icon"
     });
     dropdownBttn.append(dropdownIcon);
-    let navCollapse=$("<div>");
+    let navCollapse = $("<div>");
     navCollapse.attr({
         class: "collapse navbar-collapse",
         id: "navbarNavAltMarkup"
     })
-    let navItems=$("<div>");
+    let navItems = $("<div>");
     navItems.attr({
-        class:"navbar-nav"
+        class: "navbar-nav"
     });
     let navAbout = $("<a>");
     navAbout.attr({
@@ -49,11 +50,30 @@ $(document).ready(function () {
         href: "email.html",
     })
     navContact.text("Contact");
-    navItems.append(navAbout,navContact);
+    navItems.append(navAbout, navContact);
     navCollapse.append(navItems);
-    bootNav.append(brandElement,dropdownBttn,navCollapse);
+    bootNav.append(brandElement, dropdownBttn, navCollapse);
     $(".boot-nav").append(bootNav);
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () { myFunction() };
+
+    // Get the navbar
+    var navbar = $(".boot-nav");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
 })
+
+
 
 
 
